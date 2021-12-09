@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                dir 'test1'{
+                dir ('test1'){
                     git 'https://github.com/zoom2x/test.git'
                     bat 'javac App.java && java App'
                 }
